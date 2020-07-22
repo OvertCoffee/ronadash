@@ -1,0 +1,22 @@
+# https://grafana.com/docs/grafana/latest/administration/provisioning/
+
+apiVersion: 1
+datasources:
+  - id: 1
+    orgId: 1
+    name: "RonaDB"
+    type: "postgres"
+    typeLogoUrl: "public/app/plugins/datasource/postgres/img/postgresql_logo.svg"
+    access: "proxy"
+    url: "db:5432"
+    database: "rona_db"
+    basicAuth: false
+    isDefault: true
+    user: $POSTGRES_USER
+    jsonData: 
+      tslauth: false
+      postgresVersion: 903
+      sslmode: "disable"
+    secureJsonData:
+      password: $POSTGRES_PASSWORD
+    readOnly: false
