@@ -8,7 +8,9 @@ The goal of this project is to make information regarding the spread of the 2019
 
 ## Install
 
-* Clone the CSSE's data repo, this is used for historic data. Data repo should be adjacent to this repo on the local system (see the volumes specification for data service in docker-compose.yml to adjust)
+* [Install Docker](https://docs.docker.com/get-docker).
+
+* Clone the [CSSE's data repo](https://github.com/CSSEGISandData/COVID-19), this is used for historic data. Data repo should be adjacent to this repo on the local system (see the volumes specification for data service in docker-compose.yml to adjust)
     * ```git clone https://github.com/CSSEGISandData/COVID-19.git ../COVID-19```
 
 * Rename example.env to .env and fill in values as appropriate for endpoint, email, database credentials, etc.
@@ -46,11 +48,11 @@ Pull requests and issues are welcome. Please discuss the changes via issue or em
 
 ## Data Sources
 
-[Daily](https://corona.azure-api.net/) ([Docs](https://documenter.getpostman.com/view/11787033/SzzoYuSa?version=latest#intro))
+[Daily Updates](https://corona.azure-api.net/) ([Docs](https://documenter.getpostman.com/view/11787033/SzzoYuSa?version=latest#intro))
 
-[Historical](https://github.com/CSSEGISandData/COVID-19)
+[Historical](https://github.com/CSSEGISandData/COVID-19) (initial database load)
 
 
 ## Disclaimer
 
-This project was developed without the assistance of any doctor, epidemiologist, statistician, or government entity. As such, any insights provided should not be construed as medical or legal advice.
+This project was developed without the assistance of any doctor, epidemiologist, statistician, or government entity. Any insights provided should not be construed as medical or legal advice.
